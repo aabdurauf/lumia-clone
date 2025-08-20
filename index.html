@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumia Bootstrap Template</title>
+    <!-- tab icon -->
+    <link rel="shortcut icon" href="./assets/icons/apple-touch-icon.png" type="image/x-icon">
+    <!-- bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- bootstrap icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <!-- glightbox css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <!-- swiper css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- import style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="bg-white d-flex align-items-center sticky-top">
+        <div class="container d-flex align-items-center">
+            <!-- nav-logo -->
+            <h1 class="nav-logo me-auto d-flex align-items-center">
+                <a class="nav-logo-link text-uppercase text-decoration-none" href="./">lumia</a>
+            </h1>
+            <!-- nav links -->
+            <nav class="navbar p-0">
+                <ul class="nav-links-wrapper d-flex align-items-center m-0">
+                    <li class="nav-link-parent">
+                        <a class="nav-link text-capitalize nav-link-active" href="#hero">home</a>
+                    </li>
+                    <li class="nav-link-parent">
+                        <a class="nav-link text-capitalize" href="#about">about</a>
+                    </li>
+                    <li class="nav-link-parent">
+                        <a class="nav-link text-capitalize" href="#services">services</a>
+                    </li>
+                    <li class="nav-link-parent">
+                        <a class="nav-link text-capitalize" href="#portfolio">portfolio</a>
+                    </li>
+                    <li class="nav-link-parent">
+                        <a class="nav-link text-capitalize" href="#testimonials">testimonials</a>
+                    </li>
+                    <!-- drop down -->
+                    <li class="nav-link-parent">
+                        <a id="dropDownBtn" class="nav-link d-flex align-items-center justify-content-between" href="#">
+                            <span class="nav-link-span text-capitalize">drop down</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul id="dropDown" class="drop-down-wrapper bg-white">
+                            <li class="nav-link-parent">
+                                <a class="nav-link text-capitalize" href="#">drop down 1</a>
+                            </li>
+                            <!-- deep drop down -->
+                            <li class="nav-link-parent">
+                                <a id="deepDropDownBtn"
+                                    class="nav-link d-flex align-items-center justify-content-between" href="#">
+                                    <span class="nav-link-span text-capitalize">deep drop down</span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </a>
+                                <ul id="deepDropDown" class="deep-drop-down-wrapper bg-white">
+                                    <li class="nav-link-parent">
+                                        <a class="nav-link text-capitalize" href="#">deep drop down 1</a>
+                                    </li>
+                                    <li class="nav-link-parent">
+                                        <a class="nav-link text-capitalize" href="#">deep drop down 2</a>
+                                    </li>
+                                    <li class="nav-link-parent">
+                                        <a class="nav-link text-capitalize" href="#">deep drop down 3</a>
+                                    </li>
+                                    <li class="nav-link-parent">
+                                        <a class="nav-link text-capitalize" href="#">deep drop down 4</a>
+                                    </li>
+                                    <li class="nav-link-parent">
+                                        <a class="nav-link text-capitalize" href="#">deep drop down 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-link-parent">
+                                <a class="nav-link text-capitalize" href="#">drop down 2</a>
+                            </li>
+                            <li class="nav-link-parent">
+                                <a class="nav-link text-capitalize" href="#">drop down 3</a>
+                            </li>
+                            <li class="nav-link-parent">
+                                <a class="nav-link text-capitalize" href="#">drop down 4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-link-parent">
+                        <a class="nav-link text-capitalize" href="#contact">contact</a>
+                    </li>
+                </ul>
+                <!-- close nav modal button -->
+                <i class="bi bi-x close-nav-btn text-white"></i>
+            </nav>
+            <!-- social links -->
+            <div class="nav-social-links d-flex align-items-center">
+                <a href="https://twitter.com/aabdurauf004">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/abdurauf_a_/">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/abdurauf-ashurov-656415213/">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+            <!-- open nav modal button -->
+            <i class="bi bi-list nav-open-btn"></i>
+        </div>
+    </header>
+    <!-- header -->
+    <section id="hero" class="hero">
+        <div class="cover w-100 h-100 d-flex flex-column align-items-center justify-content-center text-center">
+            <div class="container">
+                <h1 class="header-title text-white display-5">Welcome to <span class="lumia">Lumia</span></h1>
+                <h2 class="header-text">We are team of talented designers making websites with Bootstrap</h2>
+                <a href="#about" class="header-btn text-uppercase text-light text-decoration-none">get started</a>
+            </div>
+        </div>
+    </section>
+    <!-- main -->
+    <main>
+        <!-- what we do section one -->
+        <section id="hero" class="what-we-do">
+            <div class="container">
+                <h4 class="sec-one-title text-capitalize fs-2 justify-content-center position-relative d-flex">what we
+                    do
+                </h4>
+                <p class="text-center sec-one-text">Magnam dolores commodi suscipit consequatur ex aliquid</p>
+                <!-- cards wrapper -->
+                <div class="row">
+                    <!-- card item -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="sec-one-card text-center">
+                            <div
+                                class="mx-auto justify-content-center d-flex align-items-center sec-one-i-container rounded-circle">
+                                <!-- card-icon -->
+                                <iconify-icon class="fs-3 sec-one-card-icon" icon="bxl:dribbble"></iconify-icon>
+                            </div>
+                            <h4>
+                                <a href class="sec-one-card-title text-decoration-none">Lorem Ipsum</a>
+                            </h4>
+                            <p class="sec-one-card-text">Voluptatum deleniti atque corrupti quos dolores et quas
+                                molestias
+                                excepturi
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card item -->
+                    <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+                        <div class="sec-one-card text-center">
+                            <div
+                                class="mx-auto justify-content-center d-flex align-items-center sec-one-i-container rounded-circle">
+                                <!-- card-icon -->
+                                <iconify-icon class="fs-3 sec-one-card-icon" icon="bx:file"></iconify-icon>
+                            </div>
+                            <h4>
+                                <a href class="sec-one-card-title text-decoration-none">Sed ut perspiciatis</a>
+                            </h4>
+                            <p class="sec-one-card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum
+                                dolore
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card item -->
+                    <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+                        <div class="sec-one-card text-center">
+                            <div
+                                class="mx-auto justify-content-center d-flex align-items-center sec-one-i-container rounded-circle">
+                                <!-- card-icon -->
+                                <iconify-icon class="fs-3 sec-one-card-icon" icon="bx:tachometer"></iconify-icon>
+                            </div>
+                            <h4>
+                                <a href class="sec-one-card-title text-decoration-none">Magni Dolores</a>
+                            </h4>
+                            <p class="sec-one-card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                qui
+                                officia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about us section two -->
+        <section id="about" class="about">
+            <div class="container">
+                <!-- about us -->
+                <div class="about-us-wrapper row">
+                    <div class="col-lg-6">
+                        <img class="w-100" src="./assets/img/about.jpg" alt="about-us" />
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <div style="margin-bottom: 16px;">
+                            <h2 class="about-us-title">About Us</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et
+                                dolore magna aliqua.
+                            </p>
+                            <div class="d-flex">
+                                <iconify-icon icon="bi:check-all" class="fs-4 check-all-icon"></iconify-icon>
+                                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="d-flex">
+                                <iconify-icon icon="bi:check-all" class="fs-4 check-all-icon"></iconify-icon>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <iconify-icon class="receipt-icon" icon="bx:receipt"></iconify-icon>
+                                <h4>Corporis voluptates sit</h1>
+                                    <p class="fs-6">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris
+                                        nisi ut
+                                        aliquip</p>
+                            </div>
+                            <div class="col-md-6 mt-4 mt-lg-0">
+                                <iconify-icon class="receipt-icon" icon="bx:cube-alt"></iconify-icon>
+                                <h4>Ullamco laboris nisi</h4>
+                                <p class="fs-6">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia
+                                    deserunt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- skills -->
+                <div class="skills-wrapper">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="skill-container">
+                                <div class="d-flex justify-content-between">
+                                    <span class="skill text-uppercase">html</span>
+                                    <span class="skill">100%</span>
+                                </div>
+                                <div class="progress rounded-0">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="d-flex justify-content-between">
+                                    <span class="skill text-uppercase">css</span>
+                                    <span class="skill">90%</span>
+                                </div>
+                                <div class="progress rounded-0">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="d-flex justify-content-between">
+                                    <span class="skill text-uppercase">javascript</span>
+                                    <span class="skill">75%</span>
+                                </div>
+                                <div class="progress rounded-0">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="skill-container">
+                                <div class="d-flex justify-content-between">
+                                    <span class="skill text-uppercase">php</span>
+                                    <span class="skill">80%</span>
+                                </div>
+                                <div class="progress rounded-0">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="d-flex justify-content-between">
+                                    <span class="skill text-uppercase">wordpress/cms</span>
+                                    <span class="skill">90%</span>
+                                </div>
+                                <div class="progress rounded-0">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="d-flex justify-content-between">
+                                    <span class="skill text-uppercase">photoshop</span>
+                                    <span class="skill">55%</span>
+                                </div>
+                                <div class="progress rounded-0">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- about-our-work -->
+                <div class="row our-work-wrapper">
+                    <div class="col-lg-3 col-6 our-work">
+                        <div class="mb-2 mx-auto d-flex justify-content-center align-items-center rounded-circle">
+                            <i class="bi bi-emoji-smile"></i>
+                        </div>
+                        <h1 class="text-center fs-2 countable-number">0</h1>
+                        <p class="text-center">Happy Clients</p>
+                    </div>
+                    <div class="col-lg-3 col-6 our-work">
+                        <div class="mb-2 mx-auto d-flex justify-content-center align-items-center rounded-circle">
+                            <i class="bi bi-journal-richtext"></i>
+                        </div>
+                        <h1 class="text-center fs-2 countable-number">0</h1>
+                        <p class="text-center">Projects</p>
+                    </div>
+                    <div class="col-lg-3 col-6 mt-5 mt-lg-0 our-work">
+                        <div class="mb-2 mx-auto d-flex justify-content-center align-items-center rounded-circle">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <h1 class="text-center fs-2 countable-number">0</h1>
+                        <p class="text-center">Hours Of Support</p>
+                    </div>
+                    <div class="col-lg-3 col-6 mt-5 mt-lg-0 our-work">
+                        <div class="mb-2 mx-auto d-flex justify-content-center align-items-center rounded-circle">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h1 class="text-center fs-2 countable-number">0</h1>
+                        <p class="text-center">Hard Workers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- services section three -->
+        <section id="services" class="services">
+            <div class="container">
+                <h4 class="sec-one-title text-capitalize fs-2 justify-content-center position-relative d-flex">
+                    Services
+                </h4>
+                <p class="text-center sec-one-text">
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem
+                </p>
+                <!-- services cards wrapper -->
+                <div class="row">
+                    <!-- content -->
+                    <div class="col-md-6">
+                        <div class="services-card">
+                            <i class="fs-1 bi bi-briefcase"></i>
+                            <div>
+                                <h5>
+                                    <a class="services-card-title text-decoration-none" href="#">Lorem Ipsum</a>
+                                </h5>
+                                <p>
+                                    Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati cupiditate non provident
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content -->
+                    <div class="col-md-6 mt-4 mt-lg-0">
+                        <div class="services-card">
+                            <i class="fs-1 bi bi-bar-chart"></i>
+                            <div>
+                                <h5>
+                                    <a class="services-card-title text-decoration-none" href="#">Sed ut perspiciatis</a>
+                                </h5>
+                                <p>
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat
+                                    nulla pariatur
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content -->
+                    <div class="col-md-6 mt-4">
+                        <div class="services-card">
+                            <i class="fs-1 bi bi-brightness-high"></i>
+                            <div>
+                                <h5>
+                                    <a class="services-card-title text-decoration-none" href="#">Magni Dolore</a>
+                                </h5>
+                                <p>
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium
+                                    voluptatum deleniti atque
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content -->
+                    <div class="col-md-6 mt-4">
+                        <div class="services-card">
+                            <i class="fs-1 bi bi-card-checklist"></i>
+                            <div>
+                                <h5>
+                                    <a class="services-card-title text-decoration-none" href="#">Dolor Sitema</a>
+                                </h5>
+                                <p>
+                                    Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo
+                                    consequat tarad limino ata
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content -->
+                    <div class="col-md-6 mt-4">
+                        <div class="services-card">
+                            <i class="fs-1 bi bi-binoculars"></i>
+                            <div>
+                                <h5>
+                                    <a class="services-card-title text-decoration-none" href="#">Nemo Enim</a>
+                                </h5>
+                                <p>
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    mollit anim id est laborum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content -->
+                    <div class="col-md-6 mt-4">
+                        <div class="services-card">
+                            <i class="fs-1 bi bi-calendar4-week"></i>
+                            <div>
+                                <h5>
+                                    <a class="services-card-title text-decoration-none" href="#">Eiusmod Tempor</a>
+                                </h5>
+                                <p>
+                                    Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                                    soluta nobis est eligendi
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio section four -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h4 class="sec-one-title text-capitalize fs-2 justify-content-center position-relative d-flex">Portfolio
+                </h4>
+                <p class="text-center sec-one-text">Sit sint consectetur velit quisquam cupiditate impedit suscipit</p>
+                <!-- buttons wrapper -->
+                <div class="mx-auto d-flex justify-content-between buttons-wrapper">
+                    <button class="bg-white border-0 text-uppercase card-btn-active" data-filter="*">all</button>
+                    <button class="bg-white border-0 text-uppercase" data-filter=".app">app</button>
+                    <button class="bg-white border-0 text-uppercase" data-filter=".card">card</button>
+                    <button class="bg-white border-0 text-uppercase" data-filter=".web">web</button>
+                </div>
+                <!-- cards wrapper -->
+                <div class="row portfolio-cards-wrapper overflow-hidden">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent app wow fadeInUp">
+                        <div class="portfolio-card">
+                            <!-- visible only on hover -->
+                            <div class="card-details">
+                                <a class="card-hover-icons" href="./portfolio-details.html">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                                <a class="card-hover-icons portfolio-lightbox" data-gallery="portfolioGallery"
+                                    title="Preview" href="./assets/img/portfolio/portfolio-1.jpg">
+                                    <i class="bi bi-plus"></i>
+                                </a>
+                            </div>
+                            <!-- card content -->
+                            <img class="w-100" src="./assets/img/portfolio/portfolio-1.jpg" alt="card image" />
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center bg-white card-info">
+                                <h4>
+                                    <a class="text-decoration-none text-capitalize" href="./portfolio-details.html">app
+                                        1</a>
+                                </h4>
+                                <p class="text-uppercase">app</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent web wow fadeInUp">
+                        <div class="portfolio-card">
+                            <!-- visible only on hover -->
+                            <div class="card-details">
+                                <a class="card-hover-icons" href="./portfolio-details.html">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                                <a class="card-hover-icons portfolio-lightbox" data-gallery="portfolioGallery"
+                                    title="Preview" href="./assets/img/portfolio/portfolio-2.jpg">
+                                    <i class="bi bi-plus"></i>
+                                </a>
+                            </div>
+                            <!-- card content -->
+                            <img class="w-100" src="./assets/img/portfolio/portfolio-2.jpg" alt="card image" />
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center bg-white card-info">
+                                <h4>
+                                    <a class="text-decoration-none text-capitalize" href="./portfolio-details.html">web
+                                        3</a>
+                                </h4>
+                                <p class="text-uppercase">web</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent app wow fadeInUp">
+                        <div class="portfolio-card">
+                            <!-- visible only on hover -->
+                            <div class="card-details">
+                                <a class="card-hover-icons" href="./portfolio-details.html">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                                <a class="card-hover-icons portfolio-lightbox" data-gallery="portfolioGallery"
+                                    title="Preview" href="./assets/img/portfolio/portfolio-3.jpg">
+                                    <i class="bi bi-plus"></i>
+                                </a>
+                            </div>
+                            <!-- card content -->
+                            <img class="w-100" src="./assets/img/portfolio/portfolio-3.jpg" alt="card image" />
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center bg-white card-info">
+                                <h4>
+                                    <a class="text-decoration-none text-capitalize" href="./portfolio-details.html">app
+                                        2</a>
+                                </h4>
+                                <p class="text-uppercase">app</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent card wow fadeInUp">
+                        <div class="portfolio-card">
+                            <!-- visible only on hover -->
+                            <div class="card-details">
+                                <a class="card-hover-icons" href="./portfolio-details.html">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                                <a class="card-hover-icons portfolio-lightbox" data-gallery="portfolioGallery"
+                                    title="Preview" href="./assets/img/portfolio/portfolio-4.jpg">
+                                    <i class="bi bi-plus"></i>
+                                </a>
+                            </div>
+                            <!-- card content -->
+                            <img class="w-100" src="./assets/img/portfolio/portfolio-4.jpg" alt="card image" />
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center bg-white card-info">
+                                <h4>
+                                    <a class="text-decoration-none text-capitalize" href="./portfolio-details.html">card
+                                        2</a>
+                                </h4>
+                                <p class="text-uppercase">card</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent web wow fadeInUp">
+                        <div class="portfolio-card">
+                            <!-- visible only on hover -->
+                            <div class="card-details">
+                                <a class="card-hover-icons" href="./portfolio-details.html">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                                <a class="card-hover-icons portfolio-lightbox" data-gallery="portfolioGallery"
+                                    title="Preview" href="./assets/img/portfolio/portfolio-5.jpg">
+                                    <i class="bi bi-plus"></i>
+                                </a>
+                            </div>
+                            <!-- card content -->
+                            <img class="w-100" src="./assets/img/portfolio/portfolio-5.jpg" alt="card image" />
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center bg-white card-info">
+                                <h4>
+                                    <a class="text-decoration-none text-capitalize" href="./portfolio-details.html">web
+                                        2</a>
+                                </h4>
+                                <p class="text-uppercase">web</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent app wow fadeInUp">
+                        <div class="portfolio-card">
+                            <!-- visible only on hover -->
+                            <div class="card-details">
+                                <a class="card-hover-icons" href="./portfolio-details.html">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                                <a class="card-hover-icons portfolio-lightbox" data-gallery="portfolioGallery"
+                                    title="Preview" href="./assets/img/portfolio/portfolio-6.jpg">
+                                    <i class="bi bi-plus"></i>
+                                </a>
+                            </div>
+                            <img class="w-100" src="./assets/img/portfolio/portfolio-6.jpg" alt="card image" />
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center bg-white card-info">
+                                <h4>
+                                    <a class="text-decoration-none text-capitalize" href="./portfolio-details.html">app
+                                        3</a>
+                                </h4>
+                                <p class="text-uppercase">app</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent card wow fadeInUp">
+                        <div class="portfolio-card">
+                            <!-- visible only on hover -->
+                            <div class="card-details">
+                                <a class="card-hover-icons" href="./portfolio-details.html">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                                <a class="card-hover-icons portfolio-lightbox" data-gallery="portfolioGallery"
+                                    title="Preview" href="./assets/img/portfolio/portfolio-7.jpg">
+                                    <i class="bi bi-plus"></i>
+                                </a>
+                            </div>
+                            <!-- card content -->
+                            <img class="w-100" src="./assets/img/portfolio/portfolio-7.jpg" alt="card image" />
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center bg-white card-info">
+                                <h4>
+                                    <a class="text-decoration-none text-capitalize" href="./portfolio-details.html">card
+                                        1</a>
+                                </h4>
+                                <p class="text-uppercase">card</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent card wow fadeInUp">
+                        <div class="portfolio-card">
+                            <!-- visible only on hover -->
+                            <div class="card-details">
+                                <a class="card-hover-icons" href="./portfolio-details.html">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                                <a class="card-hover-icons portfolio-lightbox" data-gallery="portfolioGallery"
+                                    title="Preview" href="./assets/img/portfolio/portfolio-8.jpg">
+                                    <i class="bi bi-plus"></i>
+                                </a>
+                            </div>
+                            <!-- card content -->
+                            <img class="w-100" src="./assets/img/portfolio/portfolio-8.jpg" alt="card image" />
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center bg-white card-info">
+                                <h4>
+                                    <a class="text-decoration-none text-capitalize" href="./portfolio-details.html">card
+                                        3</a>
+                                </h4>
+                                <p class="text-uppercase">card</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent web wow fadeInUp">
+                        <div class="portfolio-card">
+                            <!-- visible only on hover -->
+                            <div class="card-details">
+                                <a class="card-hover-icons" href="./portfolio-details.html">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                                <a class="card-hover-icons portfolio-lightbox" data-gallery="portfolioGallery"
+                                    title="Preview" href="./assets/img/portfolio/portfolio-9.jpg">
+                                    <i class="bi bi-plus"></i>
+                                </a>
+                            </div>
+                            <!-- card content -->
+                            <img class="w-100" src="./assets/img/portfolio/portfolio-9.jpg" alt="card image" />
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center bg-white card-info">
+                                <h4>
+                                    <a class="text-decoration-none text-capitalize" href="./portfolio-details.html">web
+                                        1</a>
+                                </h4>
+                                <p class="text-uppercase">web</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonials section five -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h4 class="sec-one-title text-capitalize fs-2 justify-content-center position-relative d-flex">
+                    Testimonials</h4>
+                <p class="text-center sec-one-text">Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+                <div class="testimonial-swiper swiper">
+                    <div class="testimonial-cards swiper-wrapper mb-5"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+        </section>
+        <!-- team section six -->
+        <section class="team">
+            <div class="container">
+                <h4 class="sec-one-title text-capitalize fs-2 justify-content-center position-relative d-flex">Team
+                </h4>
+                <p class="text-center sec-one-text">Sit sint consectetur velit quos quisquam cupiditate nemo qui</p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="member text-center">
+                            <img class="mx-auto d-block justify-content-center rounded-circle"
+                                src="./assets/img/team/team-1.jpg" alt="member">
+                            <h4>Walter White</h4>
+                            <span class="d-block font-italic">Chief Executive Officer</span>
+                            <p>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis
+                                quaerat qui aut aut aut</p>
+                            <div class="socials">
+                                <a class="text-decoration-none" href="https://twitter.com/aabdurauf004">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a class="text-decoration-none" href="#">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a class="text-decoration-none" href="https://www.instagram.com/abdurauf_a_/">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a class="text-decoration-none"
+                                    href="https://www.linkedin.com/in/abdurauf-ashurov-656415213/">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="member text-center">
+                            <img class="mx-auto d-block justify-content-center rounded-circle"
+                                src="./assets/img/team/team-2.jpg" alt="member">
+                            <h4>Sarah Jhinson</h4>
+                            <span class="d-block font-italic">Product Manager</span>
+                            <p>Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum
+                                rerum temporibus</p>
+                            <div class="socials">
+                                <a class="text-decoration-none" href="https://twitter.com/aabdurauf004">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a class="text-decoration-none" href="#">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a class="text-decoration-none" href="https://www.instagram.com/abdurauf_a_/">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a class="text-decoration-none"
+                                    href="https://www.linkedin.com/in/abdurauf-ashurov-656415213/">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="member text-center">
+                            <img class="mx-auto d-block justify-content-center rounded-circle"
+                                src="./assets/img/team/team-3.jpg" alt="member">
+                            <h4>William Anderson</h4>
+                            <span class="d-block font-italic">CTO</span>
+                            <p>Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum
+                                toro des clara</p>
+                            <div class="socials">
+                                <a class="text-decoration-none" href="https://twitter.com/aabdurauf004">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a class="text-decoration-none" href="#">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a class="text-decoration-none" href="https://www.instagram.com/abdurauf_a_/">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a class="text-decoration-none"
+                                    href="https://www.linkedin.com/in/abdurauf-ashurov-656415213/">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact section seven -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h4 class="sec-one-title text-capitalize fs-2 justify-content-center position-relative d-flex">Contact
+                </h4>
+                <p class="text-center sec-one-text">Magnam dolores commodi suscipit eius consequatur ex aliquid fuga</p>
+                <!-- location address -->
+                <div class="w-100 mx-auto mt-5 row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="row location-info">
+                            <div class="col-lg-4">
+                                <div
+                                    class="d-flex justify-content-center align-items-center location-icon rounded-circle">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+                                <div class="location-content">
+                                    <h4>Location:</h4>
+                                    <p>A108 Adam Street</p>
+                                    <p>New York, NY 535022</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mt-4 mt-lg-0">
+                                <div
+                                    class="d-flex justify-content-center align-items-center location-icon rounded-circle">
+                                    <i class="bi bi-envelope"></i>
+                                </div>
+                                <div class="location-content">
+                                    <h4>Email:</h4>
+                                    <p>info@example.com</p>
+                                    <p>contact@example.com</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mt-4 mt-lg-0">
+                                <div
+                                    class="d-flex justify-content-center align-items-center location-icon rounded-circle">
+                                    <i class="bi bi-phone"></i>
+                                </div>
+                                <div class="location-content">
+                                    <h4>Call:</h4>
+                                    <p>+1 5589 55488 51</p>
+                                    <p>+1 5589 22475 14</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- contact form -->
+                <form action class="justify-content-center mx-auto col-lg-10 mt-5 contact-form-wrapper">
+                    <div class="justify-content-between d-flex">
+                        <input class="contact-input" type="text" placeholder="Your Name" required>
+                        <input class="mt-3 mt-md-0 contact-input" type="email" placeholder="Your Email" required>
+                    </div>
+                    <input class="contact-input w-100 mt-3" type="text" placeholder="Subject" required>
+                    <textarea class="contact-input w-100 mt-3" name="message" rows="5" placeholder="Message"
+                        required></textarea>
+                    <button class="border-0 contact-btn mt-4 mx-auto d-block" type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="first-footer">
+            <div class="container">
+                <div class="row">
+                    <!-- top footer -->
+                    <!-- first column -->
+                    <div class="col-lg-3 mb-4 col-md-6">
+                        <h3 class="footer-logo">Lumia</h3>
+                        <p class="footer-info mb-0">A108 Adam Street</p>
+                        <p class="footer-info mb-0">New York, NY 535022</p>
+                        <p class="footer-info mb-0">United States</p>
+                        <p class="footer-info mt-4 mb-0 text-decoration-none"><b>Phone:</b> +1 5589 55488 55</p>
+                        <p class="footer-info mb-0"><b>Email:</b> info@example.com</p>
+                    </div>
+                    <!-- second column -->
+                    <div class="col-lg-2 mb-4 col-md-6">
+                        <h4 class="footer-title">Useful Links</h4>
+                        <ul class="p-0 m-0">
+                            <li class="footer-list-item pt-0">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">About us</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Services</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Terms of service</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Privacy policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- third column -->
+                    <div class="col-lg-3 mb-4 col-md-6">
+                        <h4 class="footer-title">Our Services</h4>
+                        <ul class="p-0 m-0">
+                            <li class="footer-list-item pt-0">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Web Design</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Web Development</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Product Management</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Marketing</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Graphic Design</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- fourth column -->
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="footer-title">Join Our Newsletter</h4>
+                        <p class="footer-subtitle">Tamen quem nulla quae legam multos aute sint culpa legam noster magna
+                        </p>
+                        <form action class="d-flex subscribe-wrapper">
+                            <input type="text" class="subscribe-input" required>
+                            <button type="submit" class="border-0 subscribe-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- last footer -->
+        <div class="last-footer py-4">
+            <div class="container d-flex flex-md-row flex-column justify-content-between align-items-center">
+                <div>
+                    <p class="m-0 copyright text-center">&#169; Copyright <b>Lumia</b>. All Rights Reserved</p>
+                    <p class="m-0 credits">Designed by <a class="text-decoration-none"
+                            href="https://portfolio-abdurauf1.netlify.app/">Abdurauf Ashurov</a></p>
+                </div>
+                <ul class="d-flex footer-icons mb-0">
+                    <li>
+                        <a class="display-block text-center rounded-circle" href="https://twitter.com/aabdurauf004">
+                            <iconify-icon class="footer-icon" icon="mdi:twitter"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="display-block text-center rounded-circle" href="#">
+                            <iconify-icon class="footer-icon" icon="uil:facebook-f"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="display-block text-center rounded-circle"
+                            href="https://www.instagram.com/abdurauf_a_/">
+                            <iconify-icon class="footer-icon" icon="ph:instagram-logo"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="display-block text-center rounded-circle"
+                            href="https://join.skype.com/invite/AMcROgUPVtV4">
+                            <iconify-icon class="footer-icon" icon="mdi:skype"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="display-block text-center rounded-circle"
+                            href="https://www.linkedin.com/in/abdurauf-ashurov-656415213/">
+                            <iconify-icon class="footer-icon" icon="typcn:social-linkedin"></iconify-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <button class="up-btn up-btn-hidden border-0 position-fixed d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short text-white"></i>
+    </button>
+    <!-- iconify cdn -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- bootstrap javascript component -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- isotope cdn -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- glightbox cdn -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <!-- swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- local javascript file -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
